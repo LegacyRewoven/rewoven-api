@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "legacy-rewoven-registry-extensions-v1",
-  "name": "Legacy Rewoven Registry Extensions (V1)",
+  "id": "legacy-rewoven-registry-hooks-v1",
+  "name": "Legacy Rewoven Registry Hooks (V1)",
   "version": "${version}",
   "environment": "*",
   "license": "Apache-2.0",
@@ -17,8 +17,8 @@
   "depends": {
     "fabricloader": ">=0.4.0"
   },
-  "description": "Extensions to the registry",
+  "description": "Hooks for adding to registries",
   "mixins": [
-    "legacy-rewoven-registry-extension-v1.mixins.json"
+    "legacy-rewoven-registry-hooks-v1.mixins.json"
   ]
 }

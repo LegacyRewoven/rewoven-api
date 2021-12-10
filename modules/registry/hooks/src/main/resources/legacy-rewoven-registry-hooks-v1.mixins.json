@@ -1,13 +1,14 @@
 {
   "required": true,
-  "package": "io.github.legacyrewoven.mixin.registry.extension",
+  "package": "io.github.legacyrewoven.mixin.registry",
   "compatibilityLevel": "JAVA_8",
   "injectors": {
     "defaultRequire": 1
   },
   "mixins": [
-    "BiomeMixin",
+    "BlockAccessor",
+    "IdListAccessor",
     "ItemAccessor",
-    "ItemMixin"
+    "SimpleRegistryAccessor"
   ]
 }
