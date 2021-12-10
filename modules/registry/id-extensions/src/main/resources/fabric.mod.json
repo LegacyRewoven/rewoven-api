@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "legacy-rewoven-resource-loader-v1",
-  "name": "Legacy Rewoven Resource Loader (V1)",
+  "id": "legacy-rewoven-registry-extensions-v1",
+  "name": "Legacy Rewoven Registry Extensions (V1)",
   "version": "${version}",
   "environment": "*",
   "license": "Apache-2.0",
@@ -12,14 +12,13 @@
     "sources": "https://github.com/LegacyRewoven/rewoven-api"
   },
   "authors": [
-    "Legacy Rewoven",
-    "FabricMC"
+    "Legacy Rewoven"
   ],
   "depends": {
     "fabricloader": ">=0.4.0"
   },
-  "description": "Asset loading",
+  "description": "Extensions to the registry",
   "mixins": [
-    "legacy-rewoven-resource-loader-v1.mixins.json"
+    "legacy-rewoven-registry-extension-v1.mixins.json"
   ]
 }
