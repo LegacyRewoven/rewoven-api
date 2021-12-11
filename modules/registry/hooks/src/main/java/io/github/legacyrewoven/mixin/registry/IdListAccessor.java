@@ -1,5 +1,6 @@
 package io.github.legacyrewoven.mixin.registry;
 
+import java.util.IdentityHashMap;
 import java.util.List;
 
 import org.spongepowered.asm.mixin.Mixin;
@@ -11,4 +12,7 @@ import net.minecraft.util.IdList;
 public interface IdListAccessor {
 	@Accessor
 	List<?> getList();
+
+	@Accessor
+	IdentityHashMap<?, Integer> getIdMap();
 }
