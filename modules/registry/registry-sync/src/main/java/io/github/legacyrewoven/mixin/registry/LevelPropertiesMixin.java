@@ -39,6 +39,7 @@ public class LevelPropertiesMixin implements RegistryDataAccessor {
 
 	@Inject(method = "putNbt", at = @At("TAIL"))
 	public void injectNbt(CompoundTag worldNbt, CompoundTag playerData, CallbackInfo ci) {
+		this.registryData.load();
 		worldNbt.put("RegistryData", RegistryData.toTag(this.registryData));
 	}
 }

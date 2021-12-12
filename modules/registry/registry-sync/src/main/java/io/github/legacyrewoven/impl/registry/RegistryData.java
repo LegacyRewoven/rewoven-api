@@ -7,6 +7,8 @@ import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import io.github.legacyrewoven.mixin.registry.IdListAccessor;
 import io.github.legacyrewoven.mixin.registry.SimpleRegistryAccessor;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -16,6 +18,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.SimpleRegistry;
 
 public class RegistryData {
+	public static final Logger LOGGER = LogManager.getLogger();
 	private final BiMap<Integer, Identifier> items;
 	private final BiMap<Integer, Identifier> blocks;
 

@@ -8,6 +8,7 @@
       "io.github.legacyrewoven.test.ServerLifecycleEventsTest",
       "io.github.legacyrewoven.test.ServerNetworkingTest",
       "io.github.legacyrewoven.test.EntityEventsTest",
+      "io.github.legacyrewoven.test.BlockTest",
       "io.github.legacyrewoven.test.command.SpongeCommandTest"
     ],
     "client": [
