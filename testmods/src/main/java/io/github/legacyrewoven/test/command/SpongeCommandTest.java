@@ -19,6 +19,13 @@
 package io.github.legacyrewoven.test.command;
 
 import io.github.legacyrewoven.api.command.v2.CommandRegistrar;
+import io.github.legacyrewoven.api.command.v2.lib.sponge.CommandResult;
+import io.github.legacyrewoven.api.command.v2.lib.sponge.args.GenericArguments;
+import io.github.legacyrewoven.api.command.v2.lib.sponge.spec.CommandSpec;
+import io.github.legacyrewoven.impl.registry.RegistryData;
+
+import net.minecraft.block.Block;
+import net.minecraft.text.LiteralText;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -27,6 +34,15 @@ public class SpongeCommandTest implements ModInitializer {
 	public void onInitialize() {
 		CommandRegistrar.EVENT.register((manager, dedicated) -> {
 			ModMetadataCommand.register(manager);
+			manager.register(CommandSpec.builder()
+							.executor((source, context) -> {
+								Block.REGISTRY.forEach(block -> {
+									RegistryData.LOGGER.info("{} {} {}", Block.REGISTRY.getIdentifier(block), Block.getIdByBlock(block), block.getTranslatedName());
+								});
+								return CommandResult.success();
+							})
+							.build(),
+					"regdump");
 		});
 	}
 }
