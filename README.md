@@ -1,3 +1,6 @@
+# Update: This project has merged with Legacy Fabric
+Please check out https://github.com/Legacy-Fabric/fabric instead
+
 # Legacy Rewoven API
 
 Essential hooks for modding on 1.7.10, 1.8.9 and 1.12.2.
