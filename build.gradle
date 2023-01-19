@@ -66,7 +66,7 @@ allprojects {
 	sourceCompatibility = 1.8
 	targetCompatibility = 1.8
 
-	group = "io.github.legacyrewoven.rewoven-api"
+	group = "net.legacyfabric.legacy-fabric-api"
 
 	repositories {
 		maven {
@@ -205,6 +205,10 @@ subprojects {
 		}
 		javadoc.enabled = false
 	}
+}
+
+task printProjectPath() {
+	System.out.println(rootProject.projectDir.toPath().resolve("../legacy-rewoven-maven").toString())
 }
 
 task remapMavenJar(type: RemapJarTask, dependsOn: jar) {

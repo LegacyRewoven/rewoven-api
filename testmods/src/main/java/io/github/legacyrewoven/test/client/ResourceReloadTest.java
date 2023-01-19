@@ -35,7 +35,7 @@ public class ResourceReloadTest implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		Identifier id = new Identifier("legacy-fabric-api", "test_reload");
+		Identifier id = new Identifier("rewoven-api", "test_reload");
 		ResourceManagerHelper.getInstance().registerReloadListener(new IdentifiableResourceReloadListener() {
 			@Override
 			public Identifier getFabricId() {
